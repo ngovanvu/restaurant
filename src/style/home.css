@@ -1,9 +1,9 @@
-/* .home{
+.home{
   max-width: 100%;
   width: 1440px;
   border: 1px solid #fff;
   margin: 0 auto;
-} */
+}
 .home {
   width: 100%;
 }
@@ -197,6 +197,7 @@
   font-size: 1.8rem;
   line-height: 33px;
   margin-top: 20px;
+  color: #fff;
 }
 .home__banner-minibtn {
   width: 50%;
@@ -232,7 +233,7 @@
 .menu__food-op .menu__food-op3 {
   position: absolute;
   top: 46%;
-  right: -7%;
+  right: 0;
 }
 .menu__food-op .menu__food-op4 {
   position: absolute;
@@ -351,11 +352,14 @@
   line-height: 19px;
   text-align: center;
 }
+.gallery__food {
+  margin-bottom: 25px;
+}
 .gallery__food-item img {
   width: 100%;
   height: 100%;
 }
-.gallery__foodMini{
+.gallery__foodMini {
   display: none;
 }
 .chef img {
@@ -382,6 +386,78 @@
 }
 .hero__detail-leftMini {
   display: none;
+}
+@media only screen and (max-width: 1440px) {
+  .home__banner-miniDesc {
+    margin: 85px 88px;
+    width: 100%;
+  }
+  .home__banner-miniDesc div {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+  .home__banner-minibtn {
+    width: 50%;
+    margin: 150px 350px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .hero__detail-leftItem{
+    bottom: 22%;
+  }
+  .hero__detail-right img {
+    display: none;
+  }
+  .hero__detail-left img {
+    width: 500px;
+    height: 500px;
+  }
+  .hero__detail-text {
+    top: 26%;
+    left: 26%;
+  }
+  .hero__detail-text h1 {
+    font-size: 5rem;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .hero__button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 134px;
+    height: 36px;
+    padding: 8px 43px 9px 42px;
+    border: none;
+    background: #f7c334;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .home__banner-miniDesc {
+      margin: 0 !important;
+  }
+  .home__banner-miniDesc div{
+    font-size: 2.2rem !important;
+    text-align: center;
+  }
+  .home__banner-minibtn{
+    margin: 0 !important;
+  }
 }
 @media only screen and (max-width: 391px) {
   .banner__content .hero__img {
@@ -517,7 +593,7 @@
     margin-bottom: 85px;
     border-radius: 15px 15px 35px 15px;
   }
-  .menu__food-cardcontent{
+  .menu__food-cardcontent {
     margin-left: 0;
   }
   .menu__food-cardcontent p {
@@ -528,30 +604,13 @@
     font-size: 15px;
     line-height: 26px;
   }
-  .gallery__food{
+  .gallery__food {
     display: none;
   }
-  .gallery__foodMini{
+  .gallery__foodMini {
     display: block;
   }
   .chef {
     flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .home__banner-miniDesc {
-    margin: 85px 88px;
-    width: 100%;
-  }
-  .home__banner-miniDesc div {
-    font-family: "Tinos";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 60px;
-  }
-  .home__banner-minibtn {
-    width: 100%;
-    margin: 150px 350px;
   }
 }

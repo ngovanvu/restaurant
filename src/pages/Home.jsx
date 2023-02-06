@@ -236,7 +236,7 @@ const Home = () => {
 
       <section>
         <Container>
-          <Row className="gallery__food">
+          <Row className="gallery__food d-flex align-items-center">
           <h1 className="menu__title-All">Галерея <span>Блюд</span></h1>
             <Col lg="6" md="6" sm="12" xs="12">
             <div className="gallery__food-item">
@@ -254,7 +254,7 @@ const Home = () => {
             </Col>
           </Row>
 
-          <Row className="gallery__food">
+          <Row className="gallery__food d-flex align-items-center">
           <Col lg="3" md="6" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood3} alt="menu__food-img1" />
