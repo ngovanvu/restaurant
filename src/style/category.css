@@ -1,0 +1,77 @@
+/* .category__card{
+    position: absolute;
+    top: -100px;
+} */
+.category__card {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  text-align: center;
+  column-gap: 40px;
+  width: 50%;
+  z-index: 9;
+  margin-left: 80px;
+  margin-top: -140px;
+}
+.category__item {
+  background: #353030;
+  text-align: center;
+  padding: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 10px 10px 40px 30px rgba(0, 0, 0, 0.1);
+}
+.category__img {
+  margin-bottom: 20px;
+  transition: 0.3s;
+  width: 126px;
+  height: 104px;
+  margin: auto;
+}
+.category__img :hover {
+  transform: scale(1.2);
+}
+/* Vì đây là link trong router nên vào thẻ a mới được tính */
+.category__content p {
+  color: #fff;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+.category__content span {
+  color: #f7c334;
+}
+.product__content h5 {
+  margin-bottom: 30px;
+}
+.category__desc {
+  /* font-weight: 600;
+  font-size: 1.2rem; */
+  margin: auto;
+  color: #fff;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 30px;
+  text-align: center;
+}
+.category__item:nth-child(2) .category__desc {
+  width: 60%;
+}
+.category__item:nth-child(3) .category__desc {
+  width: 90%;
+}
+@media only screen and (max-width: 391px) {
+  .category__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 0;
+    margin-top: -82px;
+    row-gap: 15px ;
+  }
+}

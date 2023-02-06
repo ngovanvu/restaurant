@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;700&family=Roboto:ital,wght@1,100;1,300&family=Tinos:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;700&family=Roboto:ital,wght@1,100;1,300&family=Tinos:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;700&family=Roboto:ital,wght@1,100;1,300&family=Tinos:ital@0;1&display=swap');
 body {
-  margin: 0;
   font-family: system-ui;
+  background: #2F2A2A;
+  color: #F7C334;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+/* base style */
+/* xóa gạch chân của thẻ a */
+a {
+  text-decoration:none !important;
+  color: unset
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  /* section {
+    padding: 40px 0px;
+  } */
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
 }
