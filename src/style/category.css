@@ -6,16 +6,16 @@
   display: grid;
   grid-template-columns: 360px 360px 360px;
   text-align: center;
-  column-gap: 40px;
+  column-gap: 11px;
   width: 50%;
   z-index: 9;
-  margin-left: 80px;
+  margin-left: 85px;
   margin-top: -140px;
 }
 .category__item {
   background: #353030;
   text-align: center;
-  padding: 30px;
+  padding: 35px 32px 30px;
   margin: 0 10px;
   cursor: pointer;
   box-shadow: 10px 10px 40px 30px rgba(0, 0, 0, 0.1);

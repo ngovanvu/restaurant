@@ -119,7 +119,7 @@ const Home = () => {
 
           <Row>
             <div className="category__bottom">
-              <Col lg="6" md="12" sm="12" xs="12">
+              <Col lg="5" md="12" sm="12" xs="12">
                 <div className="category__history">
                   <h1>
                     Наша <span>История</span>
@@ -148,7 +148,7 @@ const Home = () => {
                 </div>
               </Col>
 
-              <Col lg="6" md="12" sm="12" xs="12">
+              <Col lg="7" md="12" sm="12" xs="12">
                 <div className="category__home-img">
                   <img src={imgCategory} alt="category__home-img" />
                 </div>
@@ -253,7 +253,7 @@ const Home = () => {
       <section>
         <Container>
           <Row className="gallery__food d-flex align-items-center">
-          <h1 className="menu__title-All">Галерея <span>Блюд</span></h1>
+          <h1 className="gallery__title">Галерея <span>Блюд</span></h1>
             <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood} alt="menu__food-img1" />
@@ -288,7 +288,7 @@ const Home = () => {
           </Row>
 
           <Row className="gallery__foodMini">
-          <h1 className="menu__title-All">Галерея <span>Блюд</span></h1>
+          <h1 className="gallery__title">Галерея <span>Блюд</span></h1>
             <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone1} alt="menu__food-img1" />
@@ -325,10 +325,10 @@ const Home = () => {
       </section>
 
       <section >
-      <h1 className="menu__title-All">Наши <span>Повара</span></h1>
+      <h1 className="menu__title-chef">Наши <span>Повара</span></h1>
          <div className="chef"> <img src={chef1} alt="chef1"/>
-          <img src={chef2} alt="chef1"/>
-          <img src={chef3} alt="chef1"/></div>
+          <img src={chef2} alt="chef2"/>
+          <img src={chef3} alt="chef3"/></div>
       </section>
       <section>
         <div className="banner__end"></div>
