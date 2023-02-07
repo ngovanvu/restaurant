@@ -2,6 +2,7 @@
   padding: 100px;
   width: 100%;
   color: #fff;
+  overflow: hidden;
 }
 .footer__desc {
   font-family: "Inter";
@@ -57,7 +58,13 @@
   font-size: 1rem;
   line-height: 40px;
 }
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 1439px){
+  .footer__desc{
+    width: 100%;
+  }
+
+} 
+@media only screen and (max-width: 991px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -81,5 +88,8 @@
   .footer__top,
   .footer__center {
     flex-direction: column;
+  }
+  .copyright__text{
+    justify-content: center;
   }
 }

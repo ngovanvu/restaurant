@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 import rega from "../images/Rectangle 38.png";
-import regaMini from "../images/regaMini.png"
+import regaMini from "../images/regaMini.png";
 import heroright from "../images/Rectangle 33.png";
 import herorightItem from "../images/test.png";
 import leftItem from "../images/leaf.png";
@@ -31,16 +31,14 @@ import galleryfoodPhone4 from "../images/galleryFoodMini4-img.png";
 import galleryfoodPhone5 from "../images/galleryFoodMini5-img.png";
 import galleryfoodPhone6 from "../images/galleryFoodMini6-img.png";
 
+import chef1 from "../images/chef1-img.png";
+import chef2 from "../images/chef2-img.png";
+import chef3 from "../images/chef3-img.png";
 
-import chef1 from '../images/chef1-img.png'
-import chef2 from '../images/chef2-img.png'
-import chef3 from '../images/chef3-img.png'
-
-import menufood_icon1 from "../images/menufood-icon1.png"
-import menufood_icon2 from "../images/menufood-icon2.png"
-import menufood_icon3 from "../images/menufood-icon3.png"
-import menufood_icon4 from "../images/menufood-icon4.png"
-
+import menufood_icon1 from "../images/menufood-icon1.png";
+import menufood_icon2 from "../images/menufood-icon2.png";
+import menufood_icon3 from "../images/menufood-icon3.png";
+import menufood_icon4 from "../images/menufood-icon4.png";
 
 import Category from "../components/UI/Category";
 import VisitorsSlider from "../components/UI/slider/VisitorsSlider";
@@ -85,7 +83,7 @@ const Home = () => {
             <img src={rega} alt="hero__img " />
           </div>
           <div className="hero__detail-leftMini">
-          <img src={regaMini} alt="hero__img " />
+            <img src={regaMini} alt="hero__img " />
           </div>
           <div className="hero__detail-text">
             <h4>Добро пожаловать в</h4>
@@ -95,8 +93,9 @@ const Home = () => {
               <p>ДОМ ЛУЧШЕЙ ЕДЫ</p>
               <div className="hero__detail-item mb-3"></div>
             </div>
+            <button className="hero__button">МЕНЮ</button>
           </div>
-          <button className="hero__button">МЕНЮ</button>
+        
 
           <div className="hero__detail-right">
             <img src={heroright} alt="hero__img-right" />
@@ -114,80 +113,81 @@ const Home = () => {
 
       <section>
         <Container>
-            <Row>
-              <Category />
-            </Row>
-            
-            <Row>
-              <div className="category__bottom">
-                <Col lg="6" md="6" sm="12" xs="12">
-                  <div className="category__history">
-                    <h1>
-                      Наша <span>История</span>
-                    </h1>
-                    <div className="category__desc">
-                      Как и у любого другого самобытного места, у нас есть своя,
-                      особая история. Идея ресторана пришла основателям
-                      неожиданно. Во время прогулки по лесу создатель нашего
-                      ресторана застрял в сотнях километров от ближайшего
-                      населенного пункта. Вдали от цивилизации и связи им
-                      пришлось навремя обустровать себе нехитрый быт, добывать и
-                      готовить себе еду.
-                    </div>
+          <Row>
+            <Category />
+          </Row>
 
-                    <div className="category__time">
-                      <span>
-                        93<span className="category__time-desc">Напитки</span>
-                      </span>
-                      <span>
-                        206<span className="category__time-desc">Еда</span>
-                      </span>
-                      <span>
-                        71<span className="category__time-desc">Закуски</span>
-                      </span>
-                    </div>
+          <Row>
+            <div className="category__bottom">
+              <Col lg="6" md="12" sm="12" xs="12">
+                <div className="category__history">
+                  <h1>
+                    Наша <span>История</span>
+                  </h1>
+                  <div className="category__desc">
+                    Как и у любого другого самобытного места, у нас есть своя,
+                    особая история. Идея ресторана пришла основателям
+                    неожиданно. Во время прогулки по лесу создатель нашего
+                    ресторана застрял в сотнях километров от ближайшего
+                    населенного пункта. Вдали от цивилизации и связи им пришлось
+                    навремя обустровать себе нехитрый быт, добывать и готовить
+                    себе еду.
                   </div>
-                </Col>
 
-                <Col lg="6" md="6" sm="12" xs="12">
-                  <div className="category__home-img">
-                    <img src={imgCategory} alt="category__home-img" />
+                  <div className="category__time">
+                    <span>
+                      93<span className="category__time-desc">Напитки</span>
+                    </span>
+                    <span>
+                      206<span className="category__time-desc">Еда</span>
+                    </span>
+                    <span>
+                      71<span className="category__time-desc">Закуски</span>
+                    </span>
                   </div>
-                </Col>
-              </div>
-            </Row>
+                </div>
+              </Col>
+
+              <Col lg="6" md="12" sm="12" xs="12">
+                <div className="category__home-img">
+                  <img src={imgCategory} alt="category__home-img" />
+                </div>
+              </Col>
+            </div>
+          </Row>
         </Container>
       </section>
 
-      <section >
-      <div className="home__banner-Mini">
-        <div className="home__banner-MiniBrg">
-          <Container>
-            <Row>
-              <Col lg="6" md="6" sm="12" xs="12">
-                <div className="home__banner-miniDesc">
-                  <div>
-                    Отпразднуйте в одном из <div>самых лучших ресторанов.</div>
+      <section>
+        <div className="home__banner-Mini">
+          <div className="home__banner-MiniBrg">
+            <Container>
+              <Row>
+                <Col lg="6" md="12" sm="12" xs="12">
+                  <div className="home__banner-miniDesc">
+                    <div>
+                      Отпразднуйте в одном из{" "}
+                      <div>самых лучших ресторанов.</div>
+                    </div>
+                    <p>Только в этом месяце бизнес-ланч от 3000 тенге</p>
                   </div>
-                  <p>Только в этом месяце бизнес-ланч от 3000 тенге</p>
-                </div>
-              </Col>
-              <Col lg="6" md="6" sm="12" xs="12">
-                <div className="home__banner-minibtn">
-                  <button>3AKA3 СТОЛИКА</button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+                </Col>
+                <Col lg="6" md="12" sm="12" xs="12">
+                  <div className="home__banner-minibtn">
+                    <button>3AKA3 СТОЛИКА</button>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </section>
 
-      <section >
+      <section>
         <Container className="menu__food-op">
           <Row className="menu__food-pos">
             <h1 className="menu__food-title">Блюда</h1>
-            <Col lg="6" md="6" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12">
               <div className="menu__food-content">
                 <div className="item">
                   <img src={menufood1} alt="menu__food-img1" />
@@ -203,10 +203,10 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="6" md="6" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12">
               <div className="menu__food-card">
                 {menuFoodData.map((item, idex) => (
-                  <div className="menu__food-item">
+                  <div className="menu__food-item" key={idex}>
                     <div className="menu__food-img">
                       <img src={item.imgUrl} alt="menu__food-right" />
                       <div className="menu__food-price">{item.price}</div>
@@ -222,10 +222,26 @@ const Home = () => {
             </Col>
           </Row>
           <div className="menu__food-op-img">
-          <img className="menu__food-op1" src={menufood_icon1} alt ="menufood_icon1"/>
-          <img className="menu__food-op2" src={menufood_icon2} alt ="menufood_icon1"/>
-          <img className="menu__food-op3" src={menufood_icon3} alt ="menufood_icon1"/>
-          <img className="menu__food-op4" src={menufood_icon4} alt ="menufood_icon1"/>
+            <img
+              className="menu__food-op1"
+              src={menufood_icon1}
+              alt="menufood_icon1"
+            />
+            <img
+              className="menu__food-op2"
+              src={menufood_icon2}
+              alt="menufood_icon1"
+            />
+            <img
+              className="menu__food-op3"
+              src={menufood_icon3}
+              alt="menufood_icon1"
+            />
+            <img
+              className="menu__food-op4"
+              src={menufood_icon4}
+              alt="menufood_icon1"
+            />
           </div>
         </Container>
       </section>
@@ -238,16 +254,16 @@ const Home = () => {
         <Container>
           <Row className="gallery__food d-flex align-items-center">
           <h1 className="menu__title-All">Галерея <span>Блюд</span></h1>
-            <Col lg="6" md="6" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood} alt="menu__food-img1" />
                 </div>
             </Col>
-            <Col lg="3" md="6" sm="12" xs="12">
+            <Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood1} alt="menu__food-img1" />
                 </div>
-            </Col><Col lg="3" md="6" sm="12" xs="12">
+            </Col><Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood2} alt="menu__food-img1" />
                 </div>
@@ -255,16 +271,16 @@ const Home = () => {
           </Row>
 
           <Row className="gallery__food d-flex align-items-center">
-          <Col lg="3" md="6" sm="12" xs="12">
+          <Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood3} alt="menu__food-img1" />
                 </div>
-            </Col><Col lg="3" md="6" sm="12" xs="12">
+            </Col><Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood4} alt="menu__food-img1" />
                 </div>
             </Col>
-          <Col lg="6" md="6" sm="12" xs="12">
+          <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfood5} alt="menu__food-img1" />
                 </div>
@@ -273,16 +289,16 @@ const Home = () => {
 
           <Row className="gallery__foodMini">
           <h1 className="menu__title-All">Галерея <span>Блюд</span></h1>
-            <Col lg="6" md="6" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone1} alt="menu__food-img1" />
                 </div>
             </Col>
-            <Col lg="3" md="6" sm="12" xs="12">
+            <Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone2} alt="menu__food-img1" />
                 </div>
-            </Col><Col lg="3" md="6" sm="12" xs="12">
+            </Col><Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone3} alt="menu__food-img1" />
                 </div>
@@ -290,16 +306,16 @@ const Home = () => {
           </Row>
 
           <Row className="gallery__foodMini">
-          <Col lg="3" md="6" sm="12" xs="12">
+          <Col lg="3" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone4} alt="menu__food-img1" />
                 </div>
-            </Col><Col lg="3" md="6" sm="12" xs="12">
+            </Col><Col lg="12" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone5} alt="menu__food-img1" />
                 </div>
             </Col>
-          <Col lg="6" md="6" sm="12" xs="12">
+          <Col lg="6" md="12" sm="12" xs="12">
             <div className="gallery__food-item">
                   <img src={galleryfoodPhone6} alt="menu__food-img1" />
                 </div>
@@ -317,7 +333,6 @@ const Home = () => {
       <section>
         <div className="banner__end"></div>
       </section>
-
     </div>
   );
 };

@@ -59,12 +59,12 @@ const Footer = () => {
         </Row>
 
         <Row className="mt-5">
-          <Col lg="6" md="6"  sm="12" xs="12">
+          <Col lg="6" md="12"  sm="12" xs="12">
             <p className="copyright__text d-flex gap-2">
             <i class="ri-copyright-line"></i> 2022 Restaurants. All Right Reserved. Designed by Delinc
             </p>
           </Col>
-          <Col lg="6" md="6" sm="12" xs="12">
+          <Col lg="6" md="12" sm="12" xs="12">
             <div className="social__links d-flex align-items-center gap-4 justify-content-end">
              <p>Terms of Service</p>
              <p>Privacy Policy</p>

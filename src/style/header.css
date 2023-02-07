@@ -4,6 +4,7 @@
     /* background: #fff; */
     height: 62px;
     padding: 2px 0;
+    overflow: hidden;
 }
 .header__shrink{
     position: sticky;

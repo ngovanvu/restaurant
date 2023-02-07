@@ -26,8 +26,8 @@ const Category = () => {
   return (
     <div className="category__card ">
     {
-        categoryData.map((item) => (
-        <div className="category__item">
+        categoryData.map((item,index) => (
+        <div className="category__item " key={index}>
         <div className="category__img">
           <img src={item.imgUrl} alt="img" />
         </div>
