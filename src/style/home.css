@@ -174,13 +174,9 @@
   background-repeat: no-repeat;
 }
 .home__banner-MiniBrg {
-  background: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  max-width: 100%;
-  height: 357px;
-  max-height: 100%;
+ 
 }
-.home__banner-miniDesc {
+/* .home__banner-miniDesc {
   margin: 85px 88px;
   width: 100%;
 }
@@ -212,7 +208,47 @@
   color: #fff;
   font-weight: 500;
   line-height: 19px;
+} */
+
+
+.home__banner{
+  background: rgba(0, 0, 0, 0.85);
+  max-width: 100%;
+  height: 100%;
 }
+.home__banner-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 207px 104px 165px;
+  height: 100%;
+}
+.home__banner-miniDesc div{
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+}
+.home__banner-miniDesc p{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+}
+.home__banner-minibtn button {
+  border: none;
+  background: #f7c334;
+  padding: 9px 7px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+} 
+
+
 /* <---------menu__food--------> */
 .menu__food-op {
   position: relative;
@@ -401,7 +437,8 @@
   display: none;
 }
 @media only screen and (max-width: 1439px) {
-  .home__banner-miniDesc {
+  
+  /* .home__banner-miniDesc {
     margin: 85px 88px;
     width: 100%;
   }
@@ -415,6 +452,9 @@
   .home__banner-minibtn {
     width: 50%;
     margin: 150px 350px;
+  } */
+  .home__banner-content{
+    padding: 0 50px;
   }
   .chef{
     gap:1rem
@@ -481,7 +521,7 @@
   }
  
 
-  .home__banner-miniDesc {
+  /* .home__banner-miniDesc {
     margin: 85px 88px;
     width: 100%;
   }
@@ -492,6 +532,11 @@
   .home__banner-miniDesc div{
     font-size: 2.5rem !important;
     text-align: center;
+  } */
+  .home__banner-content{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
   }
   .chef {
     flex-direction: column;
@@ -548,9 +593,10 @@
   .home__banner-MiniBrg {
     height: 518px;
   }
-  .home__banner-MiniBrg {
+  .home__banner-content ,.home__banner-MiniBrg {
     background: #000000b9;
   }
+  
   .home__banner-miniDesc {
     margin: 50px auto !important;
     width: 100%;
@@ -631,7 +677,7 @@
     margin-left: 0px;
   }
   .category__bottom .category__desc {
-    width: 82%;
+    width: 83%;
     margin: 0 30px;
   }
   .category__time {

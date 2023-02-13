@@ -95,7 +95,6 @@ const Home = () => {
             </div>
             <button className="hero__button">МЕНЮ</button>
           </div>
-        
 
           <div className="hero__detail-right">
             <img src={heroright} alt="hero__img-right" />
@@ -158,11 +157,11 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
+      {/* <section>
         <div className="home__banner-Mini">
           <div className="home__banner-MiniBrg">
             <Container>
-              <Row>
+              <Row className="d-flex align-items-center justify-content-between">
                 <Col lg="6" md="12" sm="12" xs="12">
                   <div className="home__banner-miniDesc">
                     <div>
@@ -179,6 +178,26 @@ const Home = () => {
                 </Col>
               </Row>
             </Container>
+          </div>
+        </div>
+      </section> */}
+      <section>
+        <div className="home__banner-Mini">
+          <div className="home__banner">
+            <div className="home__banner-content">
+            
+              <div className="home__banner-miniDesc">
+                <div>
+                  Отпразднуйте в одном из
+                  <div>самых лучших ресторанов.</div>
+                </div>
+                <p>Только в этом месяце бизнес-ланч от 3000 тенге</p>
+              </div>
+
+              <div className="home__banner-minibtn">
+                <button>3AKA3 СТОЛИКА</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -253,82 +272,95 @@ const Home = () => {
       <section>
         <Container>
           <Row className="gallery__food d-flex align-items-center">
-          <h1 className="gallery__title">Галерея <span>Блюд</span></h1>
+            <h1 className="gallery__title">
+              Галерея <span>Блюд</span>
+            </h1>
             <Col lg="6" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood} alt="menu__food-img1" />
-                </div>
+              <div className="gallery__food-item">
+                <img src={galleryfood} alt="menu__food-img1" />
+              </div>
             </Col>
             <Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood1} alt="menu__food-img1" />
-                </div>
-            </Col><Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood2} alt="menu__food-img1" />
-                </div>
+              <div className="gallery__food-item">
+                <img src={galleryfood1} alt="menu__food-img1" />
+              </div>
+            </Col>
+            <Col lg="3" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfood2} alt="menu__food-img1" />
+              </div>
             </Col>
           </Row>
 
           <Row className="gallery__food d-flex align-items-center">
-          <Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood3} alt="menu__food-img1" />
-                </div>
-            </Col><Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood4} alt="menu__food-img1" />
-                </div>
-            </Col>
-          <Col lg="6" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfood5} alt="menu__food-img1" />
-                </div>
-            </Col>
-          </Row>
-
-          <Row className="gallery__foodMini">
-          <h1 className="gallery__title">Галерея <span>Блюд</span></h1>
-            <Col lg="6" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone1} alt="menu__food-img1" />
-                </div>
+            <Col lg="3" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfood3} alt="menu__food-img1" />
+              </div>
             </Col>
             <Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone2} alt="menu__food-img1" />
-                </div>
-            </Col><Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone3} alt="menu__food-img1" />
-                </div>
+              <div className="gallery__food-item">
+                <img src={galleryfood4} alt="menu__food-img1" />
+              </div>
+            </Col>
+            <Col lg="6" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfood5} alt="menu__food-img1" />
+              </div>
             </Col>
           </Row>
 
           <Row className="gallery__foodMini">
-          <Col lg="3" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone4} alt="menu__food-img1" />
-                </div>
-            </Col><Col lg="12" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone5} alt="menu__food-img1" />
-                </div>
+            <h1 className="gallery__title">
+              Галерея <span>Блюд</span>
+            </h1>
+            <Col lg="6" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone1} alt="menu__food-img1" />
+              </div>
             </Col>
-          <Col lg="6" md="12" sm="12" xs="12">
-            <div className="gallery__food-item">
-                  <img src={galleryfoodPhone6} alt="menu__food-img1" />
-                </div>
+            <Col lg="3" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone2} alt="menu__food-img1" />
+              </div>
+            </Col>
+            <Col lg="3" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone3} alt="menu__food-img1" />
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="gallery__foodMini">
+            <Col lg="3" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone4} alt="menu__food-img1" />
+              </div>
+            </Col>
+            <Col lg="12" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone5} alt="menu__food-img1" />
+              </div>
+            </Col>
+            <Col lg="6" md="12" sm="12" xs="12">
+              <div className="gallery__food-item">
+                <img src={galleryfoodPhone6} alt="menu__food-img1" />
+              </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section >
-      <h1 className="menu__title-chef">Наши <span>Повара</span></h1>
-         <div className="chef"> <img src={chef1} alt="chef1"/>
-          <img src={chef2} alt="chef2"/>
-          <img src={chef3} alt="chef3"/></div>
+      <section>
+        <h1 className="menu__title-chef">
+          Наши <span>Повара</span>
+        </h1>
+        <div className="chef">
+          {" "}
+          <img src={chef1} alt="chef1" />
+          <img src={chef2} alt="chef2" />
+          <img src={chef3} alt="chef3" />
+        </div>
       </section>
       <section>
         <div className="banner__end"></div>
