@@ -206,7 +206,7 @@ const Home = () => {
         <Container className="menu__food-op">
           <Row className="menu__food-pos">
             <h1 className="menu__food-title">Блюда</h1>
-            <Col lg="6" md="12" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12" className="padding_0">
               <div className="menu__food-content">
                 <div className="item">
                   <img src={menufood1} alt="menu__food-img1" />
@@ -314,17 +314,17 @@ const Home = () => {
             <h1 className="gallery__title">
               Галерея <span>Блюд</span>
             </h1>
-            <Col lg="6" md="12" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12" className="padding_0">
               <div className="gallery__food-item">
                 <img src={galleryfoodPhone1} alt="menu__food-img1" />
               </div>
             </Col>
-            <Col lg="3" md="12" sm="12" xs="12">
+            <Col lg="3" md="12" sm="12" xs="12" className="padding_0">
               <div className="gallery__food-item">
                 <img src={galleryfoodPhone2} alt="menu__food-img1" />
               </div>
             </Col>
-            <Col lg="3" md="12" sm="12" xs="12">
+            <Col lg="3" md="12" sm="12" xs="12" className="padding_0">
               <div className="gallery__food-item">
                 <img src={galleryfoodPhone3} alt="menu__food-img1" />
               </div>
@@ -332,17 +332,17 @@ const Home = () => {
           </Row>
 
           <Row className="gallery__foodMini">
-            <Col lg="3" md="12" sm="12" xs="12">
-              <div className="gallery__food-item">
+            <Col lg="3" md="12" sm="12" xs="12" className="padding_0">
+              <div className="gallery__food-item" >
                 <img src={galleryfoodPhone4} alt="menu__food-img1" />
               </div>
             </Col>
-            <Col lg="12" md="12" sm="12" xs="12">
+            <Col lg="12" md="12" sm="12" xs="12" className="padding_0">
               <div className="gallery__food-item">
                 <img src={galleryfoodPhone5} alt="menu__food-img1" />
               </div>
             </Col>
-            <Col lg="6" md="12" sm="12" xs="12">
+            <Col lg="6" md="12" sm="12" xs="12" className="padding_0">
               <div className="gallery__food-item">
                 <img src={galleryfoodPhone6} alt="menu__food-img1" />
               </div>

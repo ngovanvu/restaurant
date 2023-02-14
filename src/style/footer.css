@@ -89,6 +89,9 @@
   .footer__center {
     flex-direction: column;
   }
+  .copyright{
+    display:none;
+  }
   .copyright__text{
     justify-content: center;
   }

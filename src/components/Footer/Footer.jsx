@@ -58,7 +58,7 @@ const Footer = () => {
          </div>
         </Row>
 
-        <Row className="mt-5">
+        <Row className="copyright mt-5">
           <Col lg="6" md="12"  sm="12" xs="12">
             <p className="copyright__text d-flex gap-2">
             <i class="ri-copyright-line"></i> 2022 Restaurants. All Right Reserved. Designed by Delinc
